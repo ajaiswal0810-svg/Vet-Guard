@@ -5,6 +5,19 @@ window.addEventListener('scroll', () => {
   navbar.classList.toggle('scrolled', window.scrollY > 40);
 });
 
+const menuToggle = document.getElementById("menu-toggle");
+const navMenu = document.querySelector("#navbar ul");
+
+menuToggle.addEventListener("click", () => {
+    navMenu.classList.toggle("active");
+});
+
+document.querySelectorAll("#navbar a").forEach(link => {
+    link.addEventListener("click", () => {
+        navMenu.classList.remove("active");
+    });
+});
+
 // ─── Fade-in on scroll ────────────────────────────
 const fadeSections = document.querySelectorAll('.fade-section');
 

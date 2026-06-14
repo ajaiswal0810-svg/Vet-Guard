@@ -61,6 +61,57 @@ h1, h2, h3, h4 {
 
 #navbar a:hover { color: var(--green); }
 
+#menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: var(--navy);
+}
+
+@media (max-width: 768px) {
+
+    #navbar {
+        background: transparent;
+        box-shadow: none;
+        padding: 0;
+        border-radius: 0;
+        width: auto;
+        top: 20px;
+        right: 20px;
+        left: auto;
+        transform: none;
+    }
+
+    #menu-toggle {
+        display: block;
+        font-size: 2rem;
+        background: transparent;
+        border: none;
+        color: black; /* change to black if needed */
+        cursor: pointer;
+    }
+
+    #navbar ul {
+        display: none;
+    }
+
+    #navbar ul.active {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 50px;
+        right: 0;
+        background: white;
+        padding: 16px;
+        border-radius: 12px;
+        box-shadow: 0 4px 20px rgba(0,0,0,0.15);
+        gap: 12px;
+        min-width: 180px;
+    }
+}
+
 /* ─── Hero ───────────────────────────────────────── */
 #hero {
   width: 100%;
@@ -77,6 +128,19 @@ h1, h2, h3, h4 {
   object-fit: cover;
   object-position: center top;
   display: block;
+}
+
+#hero picture {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    #hero {
+        height: 50vh;
+    }
 }
 
 /* ─── Section Shared ─────────────────────────────── */
