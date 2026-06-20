@@ -1,4 +1,3 @@
-// ─── Navbar shadow on scroll ──────────────────────
 const navbar = document.getElementById('navbar');
 
 window.addEventListener('scroll', () => {
@@ -18,7 +17,6 @@ document.querySelectorAll("#navbar a").forEach(link => {
     });
 });
 
-// ─── Fade-in on scroll ────────────────────────────
 const fadeSections = document.querySelectorAll('.fade-section');
 
 const observer = new IntersectionObserver((entries) => {
@@ -32,7 +30,6 @@ const observer = new IntersectionObserver((entries) => {
 
 fadeSections.forEach(el => observer.observe(el));
 
-// ─── Testimonial Slideshow ────────────────────────
 const slides = document.querySelectorAll('.slide');
 const dots   = document.querySelectorAll('.dot');
 let current  = 0;

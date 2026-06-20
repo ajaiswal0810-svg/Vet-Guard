@@ -1,4 +1,3 @@
-/* ─── Reset & Base ───────────────────────────────── */
 *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
 :root {
@@ -26,7 +25,6 @@ h1, h2, h3, h4 {
   line-height: 1.2;
 }
 
-/* ─── Navbar ─────────────────────────────────────── */
 #navbar {
   position: fixed;
   top: 16px;
@@ -112,7 +110,6 @@ h1, h2, h3, h4 {
     }
 }
 
-/* ─── Hero ───────────────────────────────────────── */
 #hero {
   width: 100%;
   height: 90vh;
@@ -143,7 +140,6 @@ h1, h2, h3, h4 {
     }
 }
 
-/* ─── Section Shared ─────────────────────────────── */
 .fade-section {
   opacity: 0;
   transform: translateY(28px);
@@ -178,7 +174,6 @@ h1, h2, h3, h4 {
   margin-bottom: 48px;
 }
 
-/* ─── About ──────────────────────────────────────── */
 #about {
   background: url('VG\ About.jpg') center center / cover no-repeat;
   position: relative;
@@ -213,7 +208,6 @@ h1, h2, h3, h4 {
   margin-bottom: 16px;
 }
 
-/* ─── Products ───────────────────────────────────── */
 #products { background: var(--offwhite); }
 
 .cards-grid {
@@ -256,7 +250,6 @@ h1, h2, h3, h4 {
   line-height: 1.65;
 }
 
-/* ─── Benefits ───────────────────────────────────── */
 #benefits { background: var(--white); }
 
 .benefits-list {
@@ -306,7 +299,6 @@ h1, h2, h3, h4 {
   margin: 0;
 }
 
-/* ─── Testimonials ───────────────────────────────── */
 #testimonials {
   background: url('VG\ Test.jpg') center center / cover no-repeat;
   position: relative;
@@ -402,7 +394,6 @@ cite {
 
 .dot.active { background: #7ecf8e; }
 
-/* ─── Footer ─────────────────────────────────────── */
 #footer {
   background: var(--navy);
   color: rgba(255,255,255,0.75);
@@ -464,7 +455,6 @@ cite {
   color: rgba(255,255,255,0.45);
 }
 
-/* ─── Responsive ─────────────────────────────────── */
 @media (max-width: 900px) {
   .cards-grid { grid-template-columns: repeat(2, 1fr); }
   .footer-inner { grid-template-columns: 1fr 1fr; }
